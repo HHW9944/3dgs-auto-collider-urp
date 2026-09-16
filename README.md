@@ -10,10 +10,10 @@ This project provides a comprehensive implementation for importing, optimizing, 
 
 ## 📸 Showcase & Preview
 
-| Real-time 3DGS Rasterization | Edit-time Scene Preview |
-| :---: | :---: |
-| ![3DGS Render Showcase](docs/images/render_demo.gif) | ![Edit-time Preview](docs/images/editor_preview.png) |
-| *Photorealistic radiance field rendering in Unity URP* | *Real-time feedback within Unity Scene View* |
+|              Real-time 3DGS Rasterization              |               Edit-time Scene Preview                |
+| :----------------------------------------------------: | :--------------------------------------------------: |
+|  ![3DGS Render Showcase](docs/images/render_demo.gif)  | ![Edit-time Preview](docs/images/editor_preview.png) |
+| *Photorealistic radiance field rendering in Unity URP* |     *Real-time feedback within Unity Scene View*     |
 
 ---
 
@@ -56,11 +56,9 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
 |   URP Fragment/Vertex Shader  -->  2D Gaussian Alpha Blending     |
 +-------------------------------------------------------------------+
 
-### **Data Layer (Import & Storage)**
-
 - **Data Layer (Import & Storage)**'Dource data is processed through a custom ScriptableObject format. During import, the pipeline calculates bounding volumes and performs initial data normalization. Splats are stored in GraphicsBuffer objects at runtime.
 
-** Processing Layer (Compute): The GPU manages the heavy lifting through two primary compute kernels:
+Processing Layer (Compute): The GPU manages the heavy lifting through two primary compute kernels:
 
 Sorting Kernel: Uses a bitonic or radix sort to order splats based on their distance from the camera plane.
 
