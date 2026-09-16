@@ -4,16 +4,18 @@
 [![Render Pipeline](https://img.shields.io/badge/Render%20Pipeline-URP-blue?style=flat-square)](https://unity.com/srp/Universal-Render-Pipeline)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
+![[GP2_README_01.png]]
+
 This project provides a comprehensive implementation for importing, optimizing, and rendering 3D Gaussian Splatting (3DGS) assets within the Unity Universal Render Pipeline (URP). It is designed to bridge the gap between research-oriented splat generation and production-ready game engine integration.
 
 ---
 
 ##  Showcase & Preview
 
-|              Real-time 3DGS Rasterization              |               Edit-time Scene Preview                |
-| :----------------------------------------------------: | :--------------------------------------------------: |
-|  ![3DGS Render Showcase](docs/images/render_demo.gif)  | ![Edit-time Preview](docs/images/editor_preview.png) |
-| *Photorealistic radiance field rendering in Unity URP* |     *Real-time feedback within Unity Scene View*     |
+|              Real-time 3DGS Rasterization              |           Edit-time Scene Preview            |
+| :----------------------------------------------------: | :------------------------------------------: |
+|                                                        |                                              |
+| *Photorealistic radiance field rendering in Unity URP* | *Real-time feedback within Unity Scene View* |
 
 ---
 
@@ -46,7 +48,7 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
 +-------------------------------------------------------------------+
                                   |
                                   v
-+-------------------------------------------------------------------+
++-------------------------------------------------------------------+ 
 |                     2. Processing Layer (Compute)                 |
 |   Culling Kernel (Frustum)  -->  Sorting Kernel (GPU Radix Sort)  |
 +-------------------------------------------------------------------+
