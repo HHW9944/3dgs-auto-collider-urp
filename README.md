@@ -56,8 +56,9 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
 |   URP Fragment/Vertex Shader  -->  2D Gaussian Alpha Blending     |
 +-------------------------------------------------------------------+
 
+### **Data Layer (Import & Storage)**
 
-** Data Layer (Import & Storage): Source data is processed through a custom ScriptableObject format. During import, the pipeline calculates bounding volumes and performs initial data normalization. Splats are stored in GraphicsBuffer objects at runtime.
+- **Data Layer (Import & Storage)**'Dource data is processed through a custom ScriptableObject format. During import, the pipeline calculates bounding volumes and performs initial data normalization. Splats are stored in GraphicsBuffer objects at runtime.
 
 ** Processing Layer (Compute): The GPU manages the heavy lifting through two primary compute kernels:
 
@@ -66,5 +67,6 @@ Sorting Kernel: Uses a bitonic or radix sort to order splats based on their dist
 Culling Kernel: Filters out splats based on the camera frustum and optional occupancy masks.
 
 ** Presentation Layer (Shading): A specialized URP Fragment/Vertex shader performs the final rasterization. It calculates the 2D footprint of each 3D Gaussian and handles alpha-blending logic according to the radiance field mathematical model.
+
 
 
