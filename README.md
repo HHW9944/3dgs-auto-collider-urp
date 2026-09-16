@@ -155,7 +155,9 @@ This project is in an active state of development. The following key performance
 ## 🛣 Roadmap & Future Work
 
 - [ ] **v0.1**: Core URP Render Pass & 3DGS Splat Rendering integration.
-- [ ] **v1.0**: *To be determined.*
+- [ ] **v0.2**: GPU Density-Field computation & spatial point analysis pipeline.
+- [ ] **v0.3**: Automated low-poly MeshCollider generation & PhysX integration.
+- [ ] **v1.0**: To be determined.
 
 ---
 
@@ -183,8 +185,14 @@ copies or substantial portions of the Software.
 
 ## 📬 Contact & Acknowledgments
 
-- **Team**: 3DGS Auto-Collider Integration Team (Konkuk University)
-- **Repository**: [github.com/HHW9944/com.team.3dgs-auto-collider-urp](https://github.com/HHW9944/com.team.3dgs-auto-collider-urp)
-- **References**:
-  - Kerbl et al., *"3D Gaussian Splatting for Real-Time Radiance Field Rendering"* (SIGGRAPH 2023)
-  - Aras Pranckevičius, [*UnityGaussianSplatting*](https://github.com/aras-p/UnityGaussianSplatting)
+* **Team**: KU University 2026 Second Graduation Project(3192) Team1
+* **Repository**: [github.com/HHW9944/com.team.3dgs-auto-collider-urp](https://github.com/HHW9944/com.team.3dgs-auto-collider-urp)
+
+### Benchmark Repositories & References
+
+* **Unity URP Architecture & Integration**: 
+  * [Unity-Technologies/Graphics](https://github.com/Unity-Technologies/Graphics) — Referenced for Universal Render Pipeline (URP) native render feature architecture and custom render pass injection patterns (`ScriptableRendererFeature`).
+* **GPU Compute & Rendering Pipeline**: 
+  * [aras-p/UnityGaussianSplatting](https://github.com/aras-p/UnityGaussianSplatting) — Referenced for C#/HLSL compute shader pipeline structure and real-time GPU parallel radix sort implementation for 3D Gaussian Splats.
+* **Core Research Foundation**:
+  * Kerbl et al., *"3D Gaussian Splatting for Real-Time Radiance Field Rendering"* (SIGGRAPH 2023)
