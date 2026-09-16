@@ -5,19 +5,20 @@
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 
-![Project Showcase](docs/GP2_README_01.png)
+![Project Showcase](docs/images/GP2_README_01.png)
 
 This project provides a comprehensive implementation for importing, optimizing, and rendering 3D Gaussian Splatting (3DGS) assets within the Unity Universal Render Pipeline (URP). It is designed to bridge the gap between research-oriented splat generation and production-ready game engine integration.
 
 ---
 
-##  Showcase & Preview
+## 📸 Showcase & Preview
 
-|              Real-time 3DGS Rasterization              |           Edit-time Scene Preview            |
-| :----------------------------------------------------: | :------------------------------------------: |
-|                                                        |                                              |
-| *Photorealistic radiance field rendering in Unity URP* | *Real-time feedback within Unity Scene View* |
+|                   Standard URP Game (Baseline)                   |                        3DGS Pipeline Applied (Ours)                        |
+| :--------------------------------------------------------------: | :------------------------------------------------------------------------: |
+|       ![Standard URP Game](docs/images/GP2_README_02.png)        |            ![Standard URP Game](docs/images/GP2_README_03.png)             |
+| *Original open-source URP game scene with native mesh rendering* | *Photorealistic radiance field integration with real-time depth occlusion* |
 
+> 💡 **Comparison Note**: The left preview shows the baseline open-source URP game scene, while the right demonstrates our custom 3DGS render pass integrated directly into the identical URP gameplay loop.
 ---
 
 ## Project Overview
