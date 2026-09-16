@@ -4,7 +4,9 @@
 [![Render Pipeline](https://img.shields.io/badge/Render%20Pipeline-URP-blue?style=flat-square)](https://unity.com/srp/Universal-Render-Pipeline)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-![[GP2_README_01.png]]
+
+![[docs/GP2_README_01.png]]
+
 
 This project provides a comprehensive implementation for importing, optimizing, and rendering 3D Gaussian Splatting (3DGS) assets within the Unity Universal Render Pipeline (URP). It is designed to bridge the gap between research-oriented splat generation and production-ready game engine integration.
 
