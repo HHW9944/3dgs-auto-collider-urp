@@ -10,6 +10,24 @@
 This project provides a comprehensive implementation for importing, optimizing, and rendering 3D Gaussian Splatting (3DGS) assets within the Unity Universal Render Pipeline (URP). It is designed to bridge the gap between research-oriented splat generation and production-ready game engine integration.
 
 ---
+## Contents
+
+1. [Showcase & Preview](#showcase--preview)
+2. [Project Overview](#project-overview)
+3. [Features](#features)
+4. [System Architecture](#system-architecture)
+5. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation (UPM)](#installation-upm)
+6. [Configuration & Usage](#configuration--usage)
+   - [1. Register URP Render Feature](#1-register-urp-render-feature)
+   - [2. Import PLY / SPLAT Dataset](#2-import-ply--splat-dataset)
+   - [3. Scene Setup & Auto-Collider Generation](#3-scene-setup--auto-collider-generation)
+7. [Performance & Benchmark](#performance--benchmark)
+8. [Roadmap & Future Work](#roadmap--future-work)
+9. [License & Contact](#license--contact)
+
+---
 
 ## Showcase & Preview
 
