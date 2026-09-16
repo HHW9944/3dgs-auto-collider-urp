@@ -7,7 +7,7 @@
 
 ![Project Showcase](docs/images/GP2_README_01.png)
 
-This project provides a comprehensive implementation for importing, optimizing, and rendering 3D Gaussian Splatting (3DGS) assets within the Unity Universal Render Pipeline (URP). It is designed to bridge the gap between research-oriented splat generation and production-ready game engine integration.
+This project provides a comprehensive implementation for importing, optimizing, and rendering **3D Gaussian Splatting (3DGS) assets** within the Unity Universal Render Pipeline (URP), while automatically generating **production-ready physical colliders** for in-game interaction. It is designed to bridge the gap between research-oriented splat generation and production-ready game engine integration, enabling photorealistic radiance fields to act as interactive, collision-enabled game objects.
 
 ---
 ## Contents
