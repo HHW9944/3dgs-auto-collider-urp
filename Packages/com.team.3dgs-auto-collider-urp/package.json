@@ -1,0 +1,10 @@
+{
+  "name": "com.team.3dgs-auto-collider-urp",
+  "version": "1.0.0",
+  "displayName": "3DGS Custom Renderer & Auto-Collider Pipeline",
+  "description": "Custom 3D Gaussian Splatting Renderer and Auto-Collider Generation Pipeline for Unity URP.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "14.0.8"
+  }
+}
