@@ -8,7 +8,7 @@ This project provides a comprehensive implementation for importing, optimizing, 
 
 ---
 
-## 📸 Showcase & Preview
+##  Showcase & Preview
 
 |              Real-time 3DGS Rasterization              |               Edit-time Scene Preview                |
 | :----------------------------------------------------: | :--------------------------------------------------: |
@@ -17,13 +17,13 @@ This project provides a comprehensive implementation for importing, optimizing, 
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The **3DGS Game Asset Pipeline** focuses on high-performance rasterization and memory-efficient storage of Gaussian splats. By leveraging GPU compute shaders and custom URP rendering features, this pipeline allows developers to use photorealistic radiance fields as standard game objects.
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Custom Asset Importer**: Automated conversion of `.ply` and `.splat` files into optimized Unity sub-assets.
 - **URP Integration**: Full support for the Universal Render Pipeline via a dedicated `ScriptableRenderFeature`.
@@ -34,14 +34,15 @@ The **3DGS Game Asset Pipeline** focuses on high-performance rasterization and m
 
 ---
 
-## 🛠 System Architecture
+## System Architecture
 
 The pipeline is divided into three distinct layers to ensure modularity and performance:
 
-```text
+
+```
 +-------------------------------------------------------------------+
 |                     1. Data Layer (Import)                        |
-|   .ply / .splat  -->  Custom ScriptableObject  --> GraphicsBuffer  |
+|   .ply / .splat  -->  Custom ScriptableObject  --> GraphicsBuffer |
 +-------------------------------------------------------------------+
                                   |
                                   v
@@ -56,15 +57,18 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
 |   URP Fragment/Vertex Shader  -->  2D Gaussian Alpha Blending     |
 +-------------------------------------------------------------------+
 
-- **Data Layer (Import & Storage)**'Dource data is processed through a custom ScriptableObject format. During import, the pipeline calculates bounding volumes and performs initial data normalization. Splats are stored in GraphicsBuffer objects at runtime.
+```
 
-Processing Layer (Compute): The GPU manages the heavy lifting through two primary compute kernels:
+- **Data Layer (Import & Storage) :** Dource data is processed through a custom ScriptableObject format. During import, the pipeline calculates bounding volumes and performs initial data normalization. Splats are stored in GraphicsBuffer objects at runtime.
 
-Sorting Kernel: Uses a bitonic or radix sort to order splats based on their distance from the camera plane.
+* **Processing Layer (Compute) :** The GPU manages the heavy lifting through two primary compute kernels:
 
-Culling Kernel: Filters out splats based on the camera frustum and optional occupancy masks.
+* **Sorting Kernel :** Uses a bitonic or radix sort to order splats based on their distance from the camera plane.
 
-** Presentation Layer (Shading): A specialized URP Fragment/Vertex shader performs the final rasterization. It calculates the 2D footprint of each 3D Gaussian and handles alpha-blending logic according to the radiance field mathematical model.
+* **Culling Kernel :** Filters out splats based on the camera frustum and optional occupancy masks.
+
+* **Presentation Layer (Shading) :** A specialized URP Fragment/Vertex shader performs the final rasterization. It calculates the 2D footprint of each 3D Gaussian and handles alpha-blending logic according to the radiance field mathematical model.
 
 
+---
 
