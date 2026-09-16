@@ -23,7 +23,7 @@ The **3DGS Game Asset Pipeline** focuses on high-performance rasterization and m
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
 - **Custom Asset Importer**: Automated conversion of `.ply` and `.splat` files into optimized Unity sub-assets.
 - **URP Integration**: Full support for the Universal Render Pipeline via a dedicated `ScriptableRenderFeature`.
@@ -57,12 +57,14 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
 +-------------------------------------------------------------------+
 
 
-1. Data Layer (Import & Storage): Source data is processed through a custom ScriptableObject format. During import, the pipeline calculates bounding volumes and performs initial data normalization. Splats are stored in GraphicsBuffer objects at runtime.
+** Data Layer (Import & Storage): Source data is processed through a custom ScriptableObject format. During import, the pipeline calculates bounding volumes and performs initial data normalization. Splats are stored in GraphicsBuffer objects at runtime.
 
-2. Processing Layer (Compute): The GPU manages the heavy lifting through two primary compute kernels:
+** Processing Layer (Compute): The GPU manages the heavy lifting through two primary compute kernels:
 
 Sorting Kernel: Uses a bitonic or radix sort to order splats based on their distance from the camera plane.
 
 Culling Kernel: Filters out splats based on the camera frustum and optional occupancy masks.
 
-3. Presentation Layer (Shading): A specialized URP Fragment/Vertex shader performs the final rasterization. It calculates the 2D footprint of each 3D Gaussian and handles alpha-blending logic according to the radiance field mathematical model.
+** Presentation Layer (Shading): A specialized URP Fragment/Vertex shader performs the final rasterization. It calculates the 2D footprint of each 3D Gaussian and handles alpha-blending logic according to the radiance field mathematical model.
+
+
