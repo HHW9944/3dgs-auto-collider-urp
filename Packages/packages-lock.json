@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.team.3dgs-auto-collider-urp": {
+      "version": "file:com.team.3dgs-auto-collider-urp",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "14.0.8"
+      }
+    },
     "com.unity.burst": {
       "version": "1.8.17",
       "depth": 1,
