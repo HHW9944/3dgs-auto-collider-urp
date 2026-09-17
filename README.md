@@ -16,11 +16,12 @@ This project provides a comprehensive implementation for importing, optimizing, 
 2. [Project Overview](#project-overview)
 3. [Features](#features)
 4. [System Architecture](#system-architecture)
-5. [Getting Started](#getting-started)
-6. [Configuration & Usage](#configuration--usage)
-7. [Performance & Benchmark](#performance--benchmark)
-8. [Roadmap & Future Work](#roadmap--future-work)
-9. [License & Contact](#license--contact)
+5. [Repository Directory Structure](#Repository Directory Structure)
+6. [Getting Started](#getting-started)
+7. [Configuration & Usage](#configuration--usage)
+8. [Performance & Benchmark](#performance--benchmark)
+9. [Roadmap & Future Work](#roadmap--future-work)
+10. [License & Contact](#license--contact)
 
 ---
 
@@ -89,7 +90,7 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
 
 ---
 
-## 📂 Repository Directory Structure
+## Repository Directory Structure
 
 Our project is structured as an independent UPM (Unity Package Manager) package, completely isolated from standard project assets to ensure seamless portability via Git URL:
 
