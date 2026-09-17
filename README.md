@@ -89,7 +89,24 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
 
 ---
 
-## 🚀 Getting Started
+## 📂 Repository Directory Structure
+
+Our project is structured as an independent UPM (Unity Package Manager) package, completely isolated from standard project assets to ensure seamless portability via Git URL:
+
+```text
+Packages/com.team.3dgs-auto-collider-urp/
+├── Editor/             # Custom ScriptedImporter & Editor GUI tools
+├── Runtime/            # Core runtime logic & memory management
+│   ├── Core/           # GaussianSplatAsset & data structures
+│   ├── Physics/        # GPU density-field analysis & MeshCollider generation
+│   └── Rendering/      # ScriptableRendererFeature & render passes
+└── Shaders/            # HLSL compute kernels (Frustum Culling, Radix Sort)
+
+```
+
+---
+
+## Getting Started
 
 ### Prerequisites
 
@@ -98,7 +115,7 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
 - **Graphics API**: Direct3D 11 / Direct3D 12 / Vulkan (Compute Shader support required)
 - **Target Platform**: Windows x64 (Standalone)
 
-### Installation (UPM)
+## Installation (UPM)
 
 1. Open your Unity Project.
 2. Navigate to `Window` -> `Package Manager`.
@@ -108,9 +125,13 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
    [https://github.com/HHW9944/3dgs-auto-collider-urp.git]
    ```
 
+
+
 ---
 
-## ⚙️ Configuration & Usage
+
+
+## Configuration & Usage
 
 ### 1. Register URP Render Feature
 To inject the 3DGS rendering pass into your active render pipeline:
@@ -132,7 +153,7 @@ To inject the 3DGS rendering pass into your active render pipeline:
 
 ---
 
-## 📊 Performance & Benchmark
+## Performance & Benchmark
 
 ### Key Metrics for Evaluation
 
@@ -152,7 +173,7 @@ This project is in an active state of development. The following key performance
 
 ---
 
-## 🛣 Roadmap & Future Work
+## Roadmap & Future Work
 
 - [ ] **v0.1**: Core URP Render Pass & 3DGS Splat Rendering integration.
 - [ ] **v0.2**: GPU Density-Field computation & spatial point analysis pipeline.
