@@ -105,7 +105,7 @@ The pipeline is divided into three distinct layers to ensure modularity and perf
 3. Click the `+` button at the top-left corner and select **Add package from git URL...**.
 4. Paste the repository URL:
    ```text
-   [https://github.com/HHW9944/com.team.3dgs-auto-collider-urp.git]
+   [https://github.com/HHW9944/com.team.3dgs-auto-collider-urp.git]]
    ```
 
 ---
@@ -186,7 +186,7 @@ copies or substantial portions of the Software.
 ## 📬 Contact & Acknowledgments
 
 * **Team**: KU University 2026 Second Graduation Project(3192) Team1
-* **Repository**: [github.com/HHW9944/com.team.3dgs-auto-collider-urp](https://github.com/HHW9944/com.team.3dgs-auto-collider-urp)
+* **Repository**: https://github.com/HHW9944/com.team.3dgs-auto-collider-urp.git
 
 ### Benchmark Repositories & References
 
