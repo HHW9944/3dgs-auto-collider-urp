@@ -1,0 +1,22 @@
+{
+  "name": "com.3dgs.physics-toolkit",
+  "version": "0.1.0",
+  "displayName": "3DGS Physics Toolkit",
+  "description": "PLY Gaussian 데이터로 BoxCollider를 만드는 툴킷입니다. 화면 렌더링은 별도로 설치하는 Unity Gaussian Splatting 패키지를 사용합니다.",
+  "unity": "2022.3",
+  "unityRelease": "47f1",
+  "dependencies": {},
+  "keywords": [
+    "3dgs",
+    "gaussian-splatting",
+    "physics",
+    "collider"
+  ],
+  "samples": [
+    {
+      "displayName": "Collision Test",
+      "description": "생성된 Collider 위에 Rigidbody를 떨어뜨리는 확인 절차입니다.",
+      "path": "Samples~/CollisionTest"
+    }
+  ]
+}

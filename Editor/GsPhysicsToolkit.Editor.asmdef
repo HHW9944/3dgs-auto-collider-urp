@@ -1,0 +1,19 @@
+{
+  "name": "GsPhysicsToolkit.Editor",
+  "rootNamespace": "GsPhysicsToolkit.EditorTools",
+  "references": [
+    "GsPhysicsToolkit.Runtime",
+    "GaussianSplatting"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

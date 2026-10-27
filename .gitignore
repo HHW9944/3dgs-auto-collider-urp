@@ -1,3 +1,4 @@
+# Unity cache. These appear only if this folder is opened as a project.
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -6,15 +7,16 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 /[Mm]emoryCaptures/
-/[Aa]ssets/[Aa]ssetS[Tt]ore[Pp]ackages/
-.gradle/
-ExportedObj/
-.consents/
+/[Rr]ecordings/
+
+# IDE and generated solution files
+.vs/
+.vscode/
+.idea/
 *.csproj
 *.unityproj
 *.sln
 *.suo
-*.tmp
 *.user
 *.userprefs
 *.pidb
@@ -24,5 +26,14 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+
+# OS files
 .DS_Store
 Thumbs.db
+Desktop.ini
+
+# Local logs
+*.log
+sysinfo.txt
+mono_crash.*
+GaussianPhysicsStats.csv

@@ -1,0 +1,26 @@
+﻿#pragma kernel CSMain
+RWStructuredBuffer<uint> _VoxelGrid;
+StructuredBuffer<float3> _Positions;
+float _VoxelSize;
+float4 _MinBounds;
+int _GridSizeX, _GridSizeY, _GridSizeZ;
+int _IndexOffset;
+int _PointCount;
+
+[numthreads(64, 1, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    uint index = id.x + (uint)_IndexOffset;
+    if (index >= (uint)_PointCount)
+        return;
+
+    float3 pos = _Positions[index];
+    if (_VoxelSize <= 0)
+        return;
+    int3 gridIdx = int3((pos - _MinBounds.xyz) / _VoxelSize);
+
+    if (gridIdx.x >= 0 && gridIdx.x < _GridSizeX && gridIdx.y >= 0 && gridIdx.y < _GridSizeY && gridIdx.z >= 0 && gridIdx.z < _GridSizeZ)
+    {
+        InterlockedAdd(_VoxelGrid[gridIdx.x + _GridSizeX * (gridIdx.y + _GridSizeY * gridIdx.z)], 1);
+    }
+}
