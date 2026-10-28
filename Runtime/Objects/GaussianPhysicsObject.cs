@@ -124,6 +124,10 @@ public class GaussianPhysicsObject : MonoBehaviour
         }
 
         Debug.Log("[GaussianPhysicsObject] 렌더러 Local Scale (-1,-1,-1). Collider는 로컬 좌표로 생성됩니다.");
+
+        CollisionDebugMode collisionDebug = GetComponent<CollisionDebugMode>();
+        if (collisionDebug != null)
+            collisionDebug.NotifyCollidersRebuilt();
     }
 
     SurfaceColliderSettings CreateSurfaceSettings()

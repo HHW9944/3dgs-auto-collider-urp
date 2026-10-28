@@ -64,6 +64,16 @@ public class GaussianPhysicsObjectEditor : UnityEditor.Editor
             MarkEdited(physicsObject);
             SceneView.RepaintAll();
         }
+
+        if (physicsObject.GetComponent<CollisionDebugMode>() == null)
+        {
+            if (GUILayout.Button("Collision Debug Mode 컴포넌트 추가"))
+            {
+                CollisionDebugMode debugMode = Undo.AddComponent<CollisionDebugMode>(physicsObject.gameObject);
+                debugMode.physicsObject = physicsObject;
+                MarkEdited(physicsObject);
+            }
+        }
     }
 
     public static GameObject CreateLinkedObject(
