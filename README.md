@@ -13,6 +13,9 @@ Rendering is not included. The scene is drawn by [aras-p/UnityGaussianSplatting]
 5. [Future Work](#future-work)
 
 ## Project Overview
+<img width="1429" height="858" alt="image" src="https://github.com/user-attachments/assets/1f81175c-620e-45a2-b2a5-76a665f35f05" />
+<img width="1433" height="829" alt="image" src="https://github.com/user-attachments/assets/8ed1b920-2c85-4327-9718-3f0c30b88657" />
+
 
 A 3DGS PLY stores Gaussian positions and appearance. It does not store a Unity collision shape. This toolkit bins those centers into a voxel grid and creates `BoxCollider` components so a `Rigidbody` can collide with the rendered scene.
 
