@@ -225,13 +225,14 @@ This repository does not contain the log. The rows were read from a development 
 
 The `garden` range includes a row whose collider count is `0`. The `scene` collider count is not the same on every row. `partyroom.ply` does not appear in this log.
 
-## Future Work
+## 5. Future Work
 
-The current builders do not consume per-Gaussian scale or rotation. Using those values for box orientation and size is open work. A Gaussian-shape surface estimate is not a generation mode in this repository.
+Future development will focus on improving the scalability, geometric accuracy, and computational efficiency of collider generation for complex 3D Gaussian Splatting environments.
 
-Also open:
+## Large-Scale 3DGS Scalability
 
-- measuring how far the boxes sit from the rendered surface
-- reducing the number of `BoxCollider` components
-- measuring Play Mode physics cost
-- repeating generation on scenes other than the log above, including the relationship between voxel resolution and build time
+Investigate the feasibility of collider generation for large-scale PLY datasets containing millions or tens of millions of Gaussians. Future research will examine memory consumption, voxelization overhead, collider generation time, and scalability limitations as scene complexity increases.
+
+## Gaussian-Aware Surface Reconstruction
+
+Extend surface estimation beyond Gaussian center positions by incorporating Gaussian scale, rotation, and opacity. This direction aims to improve the geometric fidelity of generated colliders, particularly around thin structures, curved surfaces, and irregular boundaries.
