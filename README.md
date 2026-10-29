@@ -219,10 +219,8 @@ This repository does not contain the log. The rows were read from a development 
 
 | FileName | Rows | OriginalPoints | ColliderCount | ProcessingTime(ms) | ReductionRate(%) |
 | --- | ---: | ---: | --- | --- | --- |
-| Aljojuca_Puebla_MX_PC | 11 | 1,676,394 | 5,484 | 239–571 | 99.67 |
 | Tree | 4 | 279,910 | 12,684 | 137–156 | 95.47 |
 | scene | 5 | 459,281 | 4,319–4,716 | 100–257 | 98.97–99.06 |
-| Santa_Maria_la_Ribera_CDMX_PC | 2 | 1,705,208 | 12,352 | 315–332 | 99.28 |
 | garden | 20 | 4,325,323 | 0–2,299 | 299–1,304 | 99.95–100.00 |
 
 The `garden` range includes a row whose collider count is `0`. The `scene` collider count is not the same on every row. `partyroom.ply` does not appear in this log.
