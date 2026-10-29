@@ -11,7 +11,7 @@ Rendering is not included. The scene is drawn by [aras-p/UnityGaussianSplatting]
 3. [Tutorial](#tutorial)
 4. [Performance & Benchmark](#performance--benchmark)
 5. [Future Work](#future-work)
-6. [References & Acknowledgments](#References & Acknowledgments)
+6. [References & Acknowledgments](#References-&-Acknowledgments)
    
 ## Project Overview
 <img width="1429" height="858" alt="image" src="https://github.com/user-attachments/assets/1f81175c-620e-45a2-b2a5-76a665f35f05" />
