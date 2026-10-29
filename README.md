@@ -209,7 +209,7 @@ On the `GaussianPhysicsObject` inspector, press `Collision Debug Mode 컴포넌�
 
 `Show Cyan Pca`, `Show Green Neighbor`, and `Show Orange Fallback` draw group wires in the Scene view. `Show Only Last Hit Collider` defaults to on, and while it is on those three group wires are skipped.
 
-## Performance & Benchmark
+## Performance
 
 The numbers below are generation records, not Play Mode frame time. `ProcessingTime(ms)` is the stopwatch around the density dispatch and the collider build together. It is not a physics-step measurement.
 
