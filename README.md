@@ -136,12 +136,15 @@ Use one of Direct3D12 or Vulkan at the top of the list. The project does not nee
 The labels below are the strings in this repository.
 
 ### 1. Import 3DGS PLY
+<img width="110" height="137" alt="image" src="https://github.com/user-attachments/assets/d5187983-d1c1-43f3-b437-2982db751d3c" />
+<img width="588" height="152" alt="image" src="https://github.com/user-attachments/assets/7f7ebae9-bff7-436f-a459-25c5b440c160" />
 
 Copy the `.ply` into the project's `Assets` folder. `SplatImporter` is a `ScriptedImporter` for the `ply` extension. It creates a `SplatData` asset and stores positions as `(-x, -y, -z)`. The importer applies to every `.ply` in the project, so do not keep mesh PLY files beside a Gaussian PLY.
 
 For the renderer path, create a `GaussianSplatAsset` from the same file with `Tools/Gaussian Splats/Create GaussianSplatAsset`. That menu belongs to UnityGaussianSplatting. The asset keeps the file's original coordinates.
 
 ### 2. Create GaussianPhysicsObject
+<img width="1022" height="75" alt="image" src="https://github.com/user-attachments/assets/4bc55c6a-9e8b-4756-b3f3-c1fa5d255caf" />
 
 Open `Gaussian Tool/Collider Generator`. The window title is `Gaussian Physics Tool`.
 
@@ -155,8 +158,9 @@ The created object is named `GaussianPhysicsObject_<splat name>`. Its children a
 Leaving `aras-p 렌더러 사용` off builds a `GS_<name>` object with the package's Built-in `GaussianSplat` material and runs Legacy generation only. The renderer path above is the one used for Surface mode.
 
 ### 3. Configure Collider Mode
+<img width="637" height="302" alt="image" src="https://github.com/user-attachments/assets/f01e6832-757c-45b7-9991-12681e04a044" />
 
-`Collider 모드` is shown only while `aras-p 렌더러 사용` is on. The default is `Legacy`.
+`Collider 모드` is shown only while `aras-p 렌더러 사용` is on. The default is `Legacy`.(But 'Surface' is recommended)
 
 `생성 시 자동 수평 보정` appears only for Legacy. Its default is on. It uses `GroundPlaneEstimator` to rotate the root before the boxes are built.
 
@@ -191,6 +195,9 @@ Use `Gaussian Tool/Create Collision Test Objects`. It creates `CollisionTestGrou
 The ground box can receive the first contact. Disable `CollisionTestGround` while testing the Gaussian colliders.
 
 ### 7. Enable Collision Debug Mode
+<img width="572" height="36" alt="image" src="https://github.com/user-attachments/assets/fa3c6f51-94ee-497a-b530-aa108cc15ff1" />
+<img width="620" height="907" alt="image" src="https://github.com/user-attachments/assets/ecc85389-9acf-4f5d-bc55-fb0b082f3b8a" />
+
 
 On the `GaussianPhysicsObject` inspector, press `Collision Debug Mode 컴포넌트 추가`. The component menu is `3DGS/Collision Debug Mode`. `Enable Collision Debug Mode` starts off.
 
